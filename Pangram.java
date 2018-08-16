@@ -5,7 +5,7 @@ import java .lang.*;
 
 class Pangram {
 
-   public static final int n = 26; 
+    public static final int n = 26; 
 
     public int check(String arr) {
         if (arr.length() < n) {
@@ -22,13 +22,13 @@ class Pangram {
 
 public static void main(String[] args) {
     Scanner s1 = new Scanner(System.in);
-    String s = s1.nextLine();
-    Solution obj = new Solution();
+    String s = s1.next();
+    Pangram obj = new Pangram();
 
     int d = obj.check(s);
 
     if (d == -1) {
-        System.out.print("no");
+        System.out.println("no");
     } else {
         System.out.print("yes");
     }
